@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+     
+        header {
+        background-color: #a8a8a8;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+       
+        
+      nav a{
+        color: black;
+        text-decoration: nome;  
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+  text-decoration: none;
+}
+
+      header img{
+        position: relative;
+          width: 100px;
+        height: 100px;
+        float: left;
+      }
+    
+      
+    </style>
+  
+</head>
+<body>
+    <header>
+
+        <img src="image/logo.jpeg" alt="logo">
+
+<nav>
+   <ul>
+    <li><a href="home.html">home</a></li>
+    <li><a href="empresa.html">empresa</a></li>
+    <li><a href="serviço.html">serviço</a></li>
+    <li><a href="contact.html">contato</a></li>    
+  </ul>
+</nav>
+    </header>
+
+    <main>
+       
+<div>
+    <h1>Serviço e Manutenção de Empilhadeiras</h1>
+</div>
+
+ <img src="image/Empilhadeira.jpg" width="1350px" height="600vh">
+ 
+
+
+        <section>
+            <h2></h2>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+ 
+    <script>
+        var images = ["image/comb.jpg", "image/eletrica.jpg", "image/combustão.jpg"];
+        var currentIndex = 0;
+    
+        function nextImage() {
+          currentIndex++;
+          if (currentIndex >= images.length) {
+            currentIndex = 0;
+          }
+          document.querySelector('.slideshow-img').src = images[currentIndex];
+        }
+    
+        setInterval(nextImage, 3000);
+      </script>
+
+</body>
+</html>
